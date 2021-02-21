@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Admin_deepshikha:shikha123@cluster0.oaxax.mongodb.net/todolistDB" , {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.oaxax.mongodb.net/todolistDB" , {useNewUrlParser: true, useUnifiedTopology: true});
 
 const itemsSchema = {
     name: String
